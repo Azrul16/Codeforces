@@ -17,28 +17,32 @@ typedef long long ll;
 #define intTOstr(n,s) {stringstream sst; sst<<n; sst>>s;}
 #define ff first
 #define ss second
-#define goBABYgo {ios::sync_with_stdio(false); cin.tie(NULL);}
+#define goBabygo {ios::sync_with_stdio(false); cin.tie(NULL);}
 //--------------------------------------------------------------
 
-int main()
-{   goBABYgo
-    ll t,a,b,c,n,i,j,tem=0,sum=0;
-    string s;
-    cin>>s;
-    b=s[0]-'a';
-    if(b>13)
-    sum+=(26-b);
-    else
-    sum+=b;
-    fl(i,0,s.size()-1){
-        a=abs(s[i]-s[i+1]);
-        if(a>=13)
-        sum+=(26-a);
-        else
-        sum+=a;
+int solve(){
+    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,ans=0;
+    cin>>n;
+    vector<int> v;
+    fl(i,0,2*n){
+        cin>>a;
+        if(find(v.begin(), v.end(), a) == v.end()) {
+        v.push_back(a);
+        }
+    }
+    fl(i,0,v.size()){
+        cout<<v[i]<<" ";
     }
 
-    cout<<sum;
+
     nl
-    
+}
+
+int main()
+{   
+    goBabygo
+    ll t;
+    cin>>t;
+    while(t--)
+    solve();
 }
