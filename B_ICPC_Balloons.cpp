@@ -23,6 +23,16 @@ typedef long long ll;
 
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,ans=0;
+    cin>>n;
+    string s;
+    cin>>s;
+    set<char> se;
+    fl(i,0,s.size()){
+        se.insert(s[i]);
+    }
+    cout<<s.size()+se.size();
+
+    nl
 
     
 }
