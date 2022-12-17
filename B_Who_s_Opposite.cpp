@@ -27,12 +27,18 @@ typedef long long ll;
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
     cin>>a>>b>>c;
-    cout<<max(0, max(b, c) + 1 - a)<<' ';
-    cout<<max(0, max(a, c) + 1 - b)<<' ';
-    cout<<max(0, max(a, b) + 1 - c);
-
-    nl
-    return 0;
+    x=2*abs(a-b);
+    if(x>a||x>b){
+        cout<<"-1";
+        nl
+        return 0;
+    }
+    else{
+         n=c+x/2;
+         while(n>x)
+         n-=x;
+    }
+    cout<<n; nl
 }
 
 int main()

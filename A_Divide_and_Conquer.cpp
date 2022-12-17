@@ -11,7 +11,6 @@ typedef long long ll;
 #define nl cout<<endl;
 #define YES cout<<"YES";
 #define NO cout<<"NO";
-#define vll(v) vector<ll> (v);
 #define vsort(v) sort(v.begin(), v.end());
 #define vsortg(v) sort(v.begin(), v.end(), greater<int>());
 #define all(x) x.begin(),x.end()
@@ -26,13 +25,21 @@ typedef long long ll;
 
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    cin>>a>>b>>c;
-    cout<<max(0, max(b, c) + 1 - a)<<' ';
-    cout<<max(0, max(a, c) + 1 - b)<<' ';
-    cout<<max(0, max(a, b) + 1 - c);
-
-    nl
-    return 0;
+    cin>>n;
+    vector<ll> vec;
+    fl(i,0,n){
+        cin>>a;
+        vec.pb(a);
+        sum+=a;
+    }
+    if(sum%2==0){
+        cout<<"0";
+        return 0;
+    }
+    else {
+        
+    }
+    
 }
 
 int main()
