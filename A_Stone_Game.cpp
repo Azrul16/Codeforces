@@ -26,17 +26,14 @@ typedef long long ll;
 
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    cin>>a;
-    if(a%7==0) cout<<a;
-    else{
-        x=a%7;
-        y=a%10;
-        if(x>y)
-        cout<<a+(7-x);
-        else cout<<a-x;
+    cin>>n;
+    vll(vec)
+    fl(i,0,n){
+        cin>>a;
+        vec.pb(a);
     }
-
-    nl
+    vsort(vec)
+    
     
 }
 

@@ -25,25 +25,38 @@ typedef long long ll;
 //--------------------------------------------------------------
 
 int solve(){
-    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    cin>>a;
-    if(a%7==0) cout<<a;
-    else{
-        x=a%7;
-        y=a%10;
-        if(x>y)
-        cout<<a+(7-x);
-        else cout<<a-x;
+    ll n,m,i,j,k,x=0,y=0,z=0,a=0,b=0,c,cnt=0,tmp=0,sum=0,p,q;
+    cin>>n;
+    string s;
+    cin>>s;
+    fl(i,0,n){
+        if(s[i]=='o')
+        x++;
+        if(s[i]=='n')
+        y++;
+        if(s[i]=='e')
+        z++;
+        if(s[i]=='z')
+        a++;
+        if(s[i]=='r')
+        b++;
     }
-
-    nl
+    p=min(x,min(y,z));
+        while(p--){
+            cout<<1<<' ';
+            x--;y--;z--;
+        }
+    q=min(a,min(z,min(b,x)));
+    while(q--){
+        cout<<0<<' ';
+    }
     
 }
 
 int main()
 {   goBabygo
-    ll t;
-    cin>>t;
+    ll t=1;
+    //cin>>t;
     while(t--)
     solve();
 }
