@@ -11,6 +11,7 @@ typedef long long ll;
 #define nl cout<<endl;
 #define YES cout<<"YES";
 #define NO cout<<"NO";
+#define vll(v) vector<ll> (v);
 #define vsort(v) sort(v.begin(), v.end());
 #define vsortg(v) sort(v.begin(), v.end(), greater<int>());
 #define all(x) x.begin(),x.end()
@@ -24,23 +25,17 @@ typedef long long ll;
 //--------------------------------------------------------------
 
 int solve(){
-    ll n,m,i,j,k,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    cin>>n;m=2*n;
-    while(m--){
-        cin>>a;
-        if(a%2==0)cnt++;
-        else tmp++;
-    }
-    if(cnt==tmp)cout<<"Yes"; else cout<<"No";
-    nl
-
+    ll n,m,i,j,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
+    int k;
+    cin>>n;
+    k=sqrt(n);cout<<k;
     
 }
 
 int main()
 {   goBabygo
-    ll t;
-    cin>>t;
+    ll t=1;
+    //cin>>t;
     while(t--)
     solve();
 }
