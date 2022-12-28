@@ -30,7 +30,13 @@ typedef long long ll;
 int main()
 {   goBabygo
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    
+    vll(v)
+    set<ll> st;
+    cin>>n;
+    while(n--){
+        cin>>a;
+        if()
+    }
 
-    
+
 }
