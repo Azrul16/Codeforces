@@ -31,9 +31,13 @@ int main()
 {   goBabygo
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
     cin>>n;
+    map<ll,ll> mp;
     fl(i,0,n){
         cin>>a;
-        
+        mp[a++];
+    }
+    for (auto it = mp.rbegin(); it != mp.rend(); it++){
+        if(mp.ff)
     }
 
     

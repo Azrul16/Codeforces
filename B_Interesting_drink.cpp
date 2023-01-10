@@ -29,9 +29,16 @@ typedef long long ll;
 
 int main()
 {   goBabygo
-    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
+    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=1,sum=0;
     cin>>n;
+    ll arr[n];
     fl(i,0,n){
+        cin>>arr[i];
+    }
+    sort(arr,arr+n);
+
+    cin>>x;
+    fl(i,0,x){
         cin>>a;
         
     }
