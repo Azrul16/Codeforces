@@ -25,20 +25,20 @@ typedef long long ll;
 //--------------------------------------------------------------
 
 int solve(){
-    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
+    ll n,m,i,j,k,x,y,z,a,b,c,p,cnt=0,tmp=0,sum=0;
     cin>>a>>b>>c;
-    x=2*abs(a-b);
-    if(x>a||x>b){
-        cout<<"-1";
-        nl
-        return 0;
+    x=abs(a-b);
+    p=x*2;
+    if(p>=a&&p>=b&&p>=c){
+    if(c>x){
+        cout<<c-x;
     }
-    else{
-         n=c+x/2;
-         while(n>x)
-         n-=x;
+    else cout<<c+x;
+    nl
+    return 0;
     }
-    cout<<n; nl
+    else cout<<"-1"<<endl;
+    
 }
 
 int main()
