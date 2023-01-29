@@ -25,20 +25,13 @@ typedef long long ll;
 #define goBabygo {ios::sync_with_stdio(false); cin.tie(NULL);}
 //--------------------------------------------------------------
 
-int solve(){
-    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    cin>>n;
-    ll arr[n][n-1];
-    fl(i,0,n){
-        if(arr[i]==arr[i-1])
-        continue;
-        else{
-            fl(j,0,n-1)
-            cin>>arr[i][0]
-        }
-    }
-
-    
+void solve() 
+{ 
+ int n; 
+ cin >> n; 
+ if(n/2 & n) cout << -1; 
+ else if(n%2!=0) cout << -1; 
+ else cout << n*6/4 << ' '<< n/2; 
 }
 
 int main()

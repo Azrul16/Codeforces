@@ -31,19 +31,19 @@ int main()
 {   goBabygo
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
     cin>>n;
-    ll arr[n];
-    fl(i,0,n)cin>>arr[i];
-    sort(arr,arr+n);
-    cin>>a;
-    while(a--){
-        cin>>x;
-        fl(i,0,n){
-            if(x>=arr[i])cnt++;
-            else break;
-        }
-        cout<<cnt<<endl;
-        cnt=0;
+    vll(v1)vll(v2)vll(v3)
+    fl(i,0,n){
+        cin>>a;
+        if(a==1)v1.pb(i+1);
+        else if(a==2)v2.pb(i+1);
+        else if(a==3)v3.pb(i+1);
     }
+    x=min(v1.size(),min(v2.size(),v3.size()));
+    cout<<x;nl
+        for(i=0;i<x;i++){
+            cout<<v1[i]<<" "<<v2[i]<<" "<<v3[i];
+            nl
+        }
 
     
 }
