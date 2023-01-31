@@ -26,20 +26,25 @@ typedef long long ll;
 //--------------------------------------------------------------
 
 int solve(){
-    int n;
-    cin >> n;
-    vector<int> v(n);
-    for (int &e : v) {
-        cin >> e;
+    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
+    cin>>n;
+    vll(even)vll(odd)
+    fl(i,0,n){
+        cin>>a;
+        if(a%2)odd.pb(i+1);
+        else even.pb(i+1);
     }
-    int maxPos = max_element(v.begin(), v.end()) - v.begin();
-    int minPos = min_element(v.begin(), v.end()) - v.begin();
-    cout << min({
-            max(maxPos, minPos) + 1,
-            (n - 1) - min(maxPos, minPos) + 1,
-            (n - 1) - maxPos + minPos + 2,
-            (n - 1) - minPos + maxPos + 2
-    }) << "\n";
+    if(odd.size()==0){NO}
+    else{
+        YES nl
+        if(odd.size()>=3){
+            for(auto &it:odd)cout<<it<<" ";
+        }
+        else{
+            cout<<odd[0]<<" "<<even[0]<<" "<<even[1];
+        }
+    }
+nl
     
 }
 

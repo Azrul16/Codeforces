@@ -1,3 +1,5 @@
+
+
 //Aurthor:- Azrul Amaline
 #include<bits/stdc++.h>
 using namespace std;
@@ -9,6 +11,10 @@ typedef long long ll;
 #define fl(i,x,y) for(i=x; i<y; i++)
 #define flc(i,x,y,z) for(i=x; i<y; i+=z)
 #define nl cout<<endl;
+#define YES cout<<"YES";
+#define NO cout<<"NO";
+#define vll(v) vector<ll> (v);
+#define vin(v,n) { while(n--) {long long yyy; cin>>yyy; v.push_back(yyy);}}
 #define vsort(v) sort(v.begin(), v.end());
 #define vsortg(v) sort(v.begin(), v.end(), greater<int>());
 #define all(x) x.begin(),x.end()
@@ -21,16 +27,15 @@ typedef long long ll;
 #define goBabygo {ios::sync_with_stdio(false); cin.tie(NULL);}
 //--------------------------------------------------------------
 
-int solve(){
-    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,ans=0;
-    cin>>n;
-    
-}
-
 int main()
 {   goBabygo
-    ll t=1;
-    //cin>>t;
-    while(t--)
-    solve();
+    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
+    cin>>n;
+    if(n%2==1)cout<<"-1";
+    else
+    fl(i,0,n){
+        if(i%2==0)cout<<i+2<<" ";
+        else cout<<i<<" ";
+    }
+    
 }

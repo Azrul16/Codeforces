@@ -26,20 +26,29 @@ typedef long long ll;
 //--------------------------------------------------------------
 
 int solve(){
-    int n;
-    cin >> n;
-    vector<int> v(n);
-    for (int &e : v) {
-        cin >> e;
+    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
+    string s[8];
+    vll(v)
+    fl(i,0,8){
+        cin>>s[i];
     }
-    int maxPos = max_element(v.begin(), v.end()) - v.begin();
-    int minPos = min_element(v.begin(), v.end()) - v.begin();
-    cout << min({
-            max(maxPos, minPos) + 1,
-            (n - 1) - min(maxPos, minPos) + 1,
-            (n - 1) - maxPos + minPos + 2,
-            (n - 1) - minPos + maxPos + 2
-    }) << "\n";
+    fl(i,0,8){
+        fl(j,0,8){
+            if(s[i][j]=='#')
+            cnt++;
+        }
+        v.pb(cnt);
+        cnt=0;
+    }
+    fl(i,2,8){
+        if(v[i-2]==2&&v[i-1]==1&&v[i]==2)
+        x=i;
+    }
+    cout<<x<<" ";
+   fl(i,0,8){
+    if(s[x-1][i]=='#')cout<<i+1;
+   }
+   nl
     
 }
 

@@ -9,8 +9,12 @@ typedef long long ll;
 #define fl(i,x,y) for(i=x; i<y; i++)
 #define flc(i,x,y,z) for(i=x; i<y; i+=z)
 #define nl cout<<endl;
+#define YES cout<<"YES";
+#define NO cout<<"NO";
+#define vll(v) vector<ll> (v);
 #define vsort(v) sort(v.begin(), v.end());
 #define vsortg(v) sort(v.begin(), v.end(), greater<int>());
+#define vin(v,n) { while(n--) {long long yyy; cin>>yyy; v.push_back(yyy);}}
 #define all(x) x.begin(),x.end()
 #define pb push_back
 #define printvc(v) for(int i=0; i<v.size(); i++) cout<<v[i]<<" ";
@@ -22,9 +26,14 @@ typedef long long ll;
 //--------------------------------------------------------------
 
 int solve(){
-    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,ans=0;
-    cin>>a>>b>>c;
-    
+    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
+    vector<ll> vec(3);
+    for(auto &it:vec)cin>>it;
+    vsort(vec)
+    if(vec[1]!=vec[2])NO
+    else cout<<"YES\n"<<vec[0]<<" "<<vec[0]<<" "<<vec[2];
+
+    nl
     
 }
 

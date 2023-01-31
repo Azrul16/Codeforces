@@ -31,10 +31,20 @@ int main()
 {   goBabygo
     ll n,m,i=0,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
     cin>>n;
+    vector<ll> vec(0);
     string s[n];
-    while(n--){
+    fl(i,0,n){
         cin>>s[i];
-        i++;
+        if(s[i].size()>tmp)tmp=s[i].size();
+        //i++;
+    }
+    fl(i,0,n){
+        fl(j,0,tmp-1){
+            if(s[j][i]==s[j+1][i])vec[i]++;
+        }
+    }
+    fl(i,0,n){
+        if(v[i]==n)cout<<s[0][]
     }
 
     
