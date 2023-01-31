@@ -27,19 +27,22 @@ typedef long long ll;
 
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    cin>>n;
     vll(v)
-    fl(i,0,n){
+    fl(i,0,4){
         cin>>a;
         v.pb(a);
     }
-    fl(i,2,n){
-        if(v[i]%2!=v[i-2]%2){
-            NO nl
-            return 0;
-        }
+    x=*min_element(all(v));
+    y=*max_element(all(v));
+    //cout<<x<<" "<<y;nl
+    fl(i,0,3){
+        if(v[i]==y&&v[i+1]==x){YES nl return 0;}
     }
-    YES nl
+    if(v[0]==x&&v[3]==y){YES nl return 0;}
+
+    NO nl
+    
+    
     
 }
 
