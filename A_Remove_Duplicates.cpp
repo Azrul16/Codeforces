@@ -14,9 +14,9 @@ typedef long long ll;
 #define YES cout<<"YES";
 #define NO cout<<"NO";
 #define vll(v) vector<ll> (v);
+#define vin(v,n) { while(n--) {long long yyy; cin>>yyy; v.push_back(yyy);}}
 #define vsort(v) sort(v.begin(), v.end());
 #define vsortg(v) sort(v.begin(), v.end(), greater<int>());
-#define getIntoVc(v,n) { while(n--) {long long yyy; cin>>yyy; v.push_back(yyy);}}
 #define all(x) x.begin(),x.end()
 #define pb push_back
 #define printvc(v) for(int i=0; i<v.size(); i++) cout<<v[i]<<" ";
@@ -30,13 +30,21 @@ typedef long long ll;
 int main()
 {   goBabygo
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    vll(v)
-    set<ll> st;
     cin>>n;
-    while(n--){
+    set<ll> sp;
+    vll(v) vll(vec)
+    fl(i,0,n){
         cin>>a;
-        if()
+        v.pb(a);
     }
+    reverse(all(v));
+    fl(i,0,n){
+        if(sp.insert(v[i]).second==true)vec.pb(v[i]);
+        
+    }
+    reverse(all(vec));
+    cout<<vec.size();nl
+    printvc(vec)
 
-
+    
 }

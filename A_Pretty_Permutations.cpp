@@ -14,6 +14,7 @@ typedef long long ll;
 #define vll(v) vector<ll> (v);
 #define vsort(v) sort(v.begin(), v.end());
 #define vsortg(v) sort(v.begin(), v.end(), greater<int>());
+#define vin(v,n) { while(n--) {long long yyy; cin>>yyy; v.push_back(yyy);}}
 #define all(x) x.begin(),x.end()
 #define pb push_back
 #define printvc(v) for(int i=0; i<v.size(); i++) cout<<v[i]<<" ";
@@ -27,17 +28,10 @@ typedef long long ll;
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
     cin>>n;
-    cout<<2;
-    if(n>3&&n){
-        fl(i,1,n){
-        if(i==2)
-        cout<<' '<<4;
-        else cout<<' '<<i;
-        }
+    if(n%2){
+        cout<<"3 1";
+        
     }
-    else 
-
-    nl
     
 }
 

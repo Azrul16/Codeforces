@@ -1,3 +1,5 @@
+
+
 //Aurthor:- Azrul Amaline
 #include<bits/stdc++.h>
 using namespace std;
@@ -12,6 +14,7 @@ typedef long long ll;
 #define YES cout<<"YES";
 #define NO cout<<"NO";
 #define vll(v) vector<ll> (v);
+#define vin(v,n) { while(n--) {long long yyy; cin>>yyy; v.push_back(yyy);}}
 #define vsort(v) sort(v.begin(), v.end());
 #define vsortg(v) sort(v.begin(), v.end(), greater<int>());
 #define all(x) x.begin(),x.end()
@@ -24,24 +27,15 @@ typedef long long ll;
 #define goBabygo {ios::sync_with_stdio(false); cin.tie(NULL);}
 //--------------------------------------------------------------
 
-int solve(){
-    ll n,m,i,j,k,x,y,z,a,b,c,cnt=1,tmp=0,sum=0;
-    string s,sp;
-    cin>>s>>sp;
-    for(i=0,j=0;i<s.size(),j<sp.size();i++){
-        if(s[i]==sp[j]){
-            j++;
-            cnt++;
-        }
-    }
-    cout<<cnt;
-    
-}
-
 int main()
 {   goBabygo
-    ll t=1;
-    //cin>>t;
-    while(t--)
-    solve();
+    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
+    string s,s2;
+    cin>>s>>s2;
+    for(i=0,j=0;i<s.size(),j<s2.size();j++){
+        if(s[i]==s2[j]){i++;cnt++;}
+    }
+    cout<<cnt+1;
+
+    
 }

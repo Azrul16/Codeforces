@@ -11,8 +11,10 @@ typedef long long ll;
 #define nl cout<<endl;
 #define YES cout<<"YES";
 #define NO cout<<"NO";
+#define vll(v) vector<ll> (v);
 #define vsort(v) sort(v.begin(), v.end());
 #define vsortg(v) sort(v.begin(), v.end(), greater<int>());
+#define vin(v,n) { while(n--) {long long yyy; cin>>yyy; v.push_back(yyy);}}
 #define all(x) x.begin(),x.end()
 #define pb push_back
 #define printvc(v) for(int i=0; i<v.size(); i++) cout<<v[i]<<" ";
@@ -24,9 +26,28 @@ typedef long long ll;
 //--------------------------------------------------------------
 
 int solve(){
-    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    
-    
+    ll n,m,i,j,k,a,b,cnt=0,tmp=0,sum=0;
+    char c;
+    cin>>n;
+    vll(v)
+    fl(i,0,n){
+        cin>>a;
+        v.pb(a);
+    }
+    fl(i,0,n){
+        cin>>b;
+        while(b--){
+            cin>>c;
+            if(c=='U')v[i]--;
+            else v[i]++;
+        }
+    }
+    //printvc(v) nl
+    fl(i,0,n){
+        if(v[i]<0)v[i]+=10;
+        cout<<v[i]%10<<" ";
+    }
+    nl
 }
 
 int main()

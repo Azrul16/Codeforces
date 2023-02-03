@@ -1,3 +1,5 @@
+
+
 //Aurthor:- Azrul Amaline
 #include<bits/stdc++.h>
 using namespace std;
@@ -12,9 +14,9 @@ typedef long long ll;
 #define YES cout<<"YES";
 #define NO cout<<"NO";
 #define vll(v) vector<ll> (v);
+#define vin(v,n) { while(n--) {long long yyy; cin>>yyy; v.push_back(yyy);}}
 #define vsort(v) sort(v.begin(), v.end());
 #define vsortg(v) sort(v.begin(), v.end(), greater<int>());
-#define vin(v,n) { while(n--) {long long yyy; cin>>yyy; v.push_back(yyy);}}
 #define all(x) x.begin(),x.end()
 #define pb push_back
 #define printvc(v) for(int i=0; i<v.size(); i++) cout<<v[i]<<" ";
@@ -25,29 +27,29 @@ typedef long long ll;
 #define goBabygo {ios::sync_with_stdio(false); cin.tie(NULL);}
 //--------------------------------------------------------------
 
-int solve(){
-    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    cin>>n;
-    vll(v)
-    fl(i,0,n){
-        cin>>a;
-        sum+=a;
-        v.pb(a);
-    }
-    if(sum%n)cout<<"-1";
-    else{
-        fl(i,0,n){
-            if(v[i]>sum/n)cnt++;
-        }
-        cout<<cnt;
-    } nl
-    
-}
-
 int main()
 {   goBabygo
-    ll t;
-    cin>>t;
-    while(t--)
-    solve();
+    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
+    cin>>n;
+    string s[n];
+    fl(i,0,n)cin>>s[i];
+
+    fl(i,0,n){
+        if(s[i][0]=='O'&&s[i][1]=='O'){
+            cnt++;
+            s[i][0]='+';s[i][1]='+';break;
+        }
+        else if(s[i][3]=='O'&&s[i][4]=='O'){
+            cnt++;
+            s[i][3]='+';s[i][4]='+';break;
+        }
+    }
+
+    if(cnt>0){
+        YES nl
+        fl(i,0,n){cout<<s[i];nl}
+    }
+    else NO
+
+    
 }

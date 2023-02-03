@@ -27,20 +27,9 @@ typedef long long ll;
 
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    cin>>n;
-    vll(v)
-    fl(i,0,n){
-        cin>>a;
-        sum+=a;
-        v.pb(a);
-    }
-    if(sum%n)cout<<"-1";
-    else{
-        fl(i,0,n){
-            if(v[i]>sum/n)cnt++;
-        }
-        cout<<cnt;
-    } nl
+    cin>>a;
+    cout<<2<<" "<<a-1;nl
+ 
     
 }
 
