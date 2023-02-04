@@ -27,16 +27,17 @@ typedef long long ll;
 
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    cin>>a;
-    if(a%2==0){
-        for(i=0;i<a;i++){
-            if(i==0)cout<<2;
-            
-            if(i%2)cout<<" "<<i;
-            else cout<<" "<<i+2;
-        }
-    }
+    cin>>n;
+    string s;
+    cin>>s;
+    i=0;j=n-1;
+    while((s[i]=='1'&&s[j]=='0')||(s[i]=='0'&&s[j]=='1')){
+        i++;j--;
+        n-=2;
+        if(n<0)n=0;
+    }cout<<n;
     nl
+    
 }
 
 int main()

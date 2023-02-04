@@ -27,16 +27,18 @@ typedef long long ll;
 
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    cin>>a;
-    if(a%2==0){
-        for(i=0;i<a;i++){
-            if(i==0)cout<<2;
-            
-            if(i%2)cout<<" "<<i;
-            else cout<<" "<<i+2;
-        }
+    YES nl
+    cin>>n;
+    vector<ll> v(n+1,0);
+    fl(i,0,n){
+        cin>>a;
+        v[a]++;
     }
-    nl
+    printvc(v)nl
+
+
+    return 0;
+    
 }
 
 int main()

@@ -24,19 +24,17 @@ typedef long long ll;
 #define ss second
 #define goBabygo {ios::sync_with_stdio(false); cin.tie(NULL);}
 //--------------------------------------------------------------
-
+string s="codeforces";
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    cin>>a;
-    if(a%2==0){
-        for(i=0;i<a;i++){
-            if(i==0)cout<<2;
-            
-            if(i%2)cout<<" "<<i;
-            else cout<<" "<<i+2;
+    char p;
+    cin>>p;
+    fl(i,0,s.size()){
+        if(p==s[i]){
+            YES nl return 0;
         }
     }
-    nl
+   NO nl 
 }
 
 int main()
