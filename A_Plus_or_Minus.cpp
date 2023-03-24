@@ -27,35 +27,9 @@ typedef long long ll;
 
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    string s1,s2;
-    cin>>s1>>s2;
-    if(s1[s1.size()-1]=='L'){
-        if(s2[s2.size()-1]=='L'){
-            if(s1.size()-1>s2.size()-1)cout<<">";
-            else if(s1.size()-1<s2.size()-1)cout<<"<";
-            else cout<<"=";
-        }
-        else cout<<">";
-    }
-    else if(s1[s1.size()-1]=='M'){
-        if(s2[s2.size()-1]=='L')cout<<"<";
-        else if(s2[s2.size()-1]=='M'){
-            if(s1.size()-1>s2.size()-1)cout<<">";
-            else if(s1.size()-1<s2.size()-1)cout<<"<";
-            else cout<<"=";
-        }
-        else cout<<">";
-    }
-    else if(s1[s1.size()-1]=='S'){
-        if(s2[s2.size()-1]=='L'||s2[s2.size()-1]=='M')cout<<"<";
-        else {
-            if(s1.size()-1>s2.size()-1)cout<<"<";
-            else if(s1.size()-1<s2.size()-1)cout<<">";
-            else cout<<"=";
-        }
-    }
-
-
+    cin>>a>>b>>c;
+    if(a+b==c)cout<<"+";
+    else cout<<"-";
 
     nl
     
