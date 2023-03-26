@@ -30,11 +30,15 @@ typedef long long ll;
 int main()
 {   goBabygo
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    cin>>n;
-    string s[n];
+    cin>>n>>k;
+    int arr[n][2];
+    //vll(v)
     fl(i,0,n){
-        cin>>s[i];
+        cin>>a;
+        if(a>k)arr[i]
     }
     
+
+
     
 }

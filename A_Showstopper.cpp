@@ -38,10 +38,17 @@ int solve(){
         cin>>a;
         v2.pb(a);
     }
-    p=*max_element(v1.begin(), v1.end());
+    fl(i,0,n){
+        if(v1[i]>v2[i])swap(v1[i],v2[i]);
+    }
+    p=*max_element(all(v1));
     q=*max_element(all(v2));
 
-    
+    if(p==v1[v1.size()-1]&&q==v2[v2.size()-1])cout<<"Yes";
+    else cout<<"No";
+    nl
+
+
 
 
     
