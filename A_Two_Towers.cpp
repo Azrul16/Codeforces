@@ -25,16 +25,17 @@ typedef long long ll;
 #define goBabygo {ios::sync_with_stdio(false); cin.tie(NULL);}
 //--------------------------------------------------------------
 
-//Global Declaration 
-//--------------------------------------------------------------
-const int N=1e5+10;
-int dp[N];
-//--------------------------------------------------------------
-
-
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    
+    cin>>n>>m;
+    string s1,s2;
+    cin>>s1>>s2;
+    if((n>=3)&&(s1[n-1]==s1[n-2]&&s1[n-2]==s1[n-3]))NO
+    else if((m>=3)&&(s2[m-1]==s2[m-2]&&s2[m-2]==s2[m-3]))NO
+    else if((s1[n-1]==s1[n-2]&&s1[n-1]==s2[m-1])||(s2[m-1]==s2[m-2]&&s2[m-1]==s1[n-1]))NO
+    else YES
+
+    nl
     
 }
 
