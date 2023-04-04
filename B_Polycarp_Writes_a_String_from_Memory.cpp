@@ -33,11 +33,26 @@ int dp[N];
 
 
 int solve(){
-    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    cin>>a>>b;
-    cout<<min(min(a,b),(a+b)/4);
-    nl
-    
+    ll n,m,i,j,k,x,y,z,a,b,c,cnt=1,tmp=0,sum=0;
+    char l;
+    string s;
+    set<char> sp;
+    cin>>s;
+    fl(i,0,s.size()){
+        l=s[i];
+        sp.insert(s[i]);
+        if(sp.size()<=3){
+            continue;
+        }
+        else{
+            cnt++;
+            //cout<<cnt<<" ";
+            sp.clear();
+            sp.insert(s[i]);
+        }
+    }
+
+    cout<<cnt;nl
 }
 
 int main()

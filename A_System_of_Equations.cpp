@@ -33,14 +33,12 @@ int main()
     cin>>a>>b;
     if(a==1&&b==1)cout<<2;
     else{
-
-    
     fl(i,0,max(a,b)){
         fl(j,0,max(a,b)){
-            if((i*i+j==a&&j*j+i==b)||(j*j+i==a&&i*i+j==b))cnt++;
+            if((j*j+i==a)&&(i*i+j==b))cnt++;
         }
     }
-cout<<cnt/2;
+cout<<cnt;
     }
     
 }

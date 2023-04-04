@@ -34,8 +34,9 @@ int dp[N];
 
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    cin>>a>>b;
-    cout<<min(min(a,b),(a+b)/4);
+    cin>>n;
+    a=pow(2,n)-1;
+    cout<<a;
     nl
     
 }
