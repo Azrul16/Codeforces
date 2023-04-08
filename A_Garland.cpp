@@ -25,18 +25,27 @@ typedef long long ll;
 #define goBabygo {ios::sync_with_stdio(false); cin.tie(NULL);}
 //--------------------------------------------------------------
 
+//Global Declaration 
+//--------------------------------------------------------------
+const int N=1e5+10;
+int dp[N];
+//--------------------------------------------------------------
+
+
 int solve(){
-    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0,p,q;
-    i=0;
+    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
     string s;
     cin>>s;
-    p=count(all(s),'1');
-    q=count(all(s),'0');
-    if(p>q)p--;
-    else if(q>p)q--;
-    if(p==q)cout<<0;
-    else cout<<min(p,q);
-
+    map<char,ll> mp;
+    fl(i,0,4){
+        mp[s[i]]++;
+    }
+        for(auto it:mp){
+        tmp=max(tmp,it.second);
+    }
+    if(tmp==4)cout<<"-1";
+    else if(tmp==3)cout<<"6";
+    else cout<<"4";
     nl
     
 }

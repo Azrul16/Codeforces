@@ -25,22 +25,29 @@ typedef long long ll;
 #define goBabygo {ios::sync_with_stdio(false); cin.tie(NULL);}
 //--------------------------------------------------------------
 
+//Global Declaration 
+//--------------------------------------------------------------
+const int N=1e5+10;
+int dp[N];
+//--------------------------------------------------------------
+
+
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    cin>>n;
-    set<ll> s;
     vll(v)
+    cin>>n;
     fl(i,0,n){
         cin>>a;
         v.pb(a);
-        if(i>0){
-            s.insert(v[i]-v[i-1]);
-        }
+        //cin>>v[i];
     }
-    for(auto it:s){
-        cout<<it<<" ";
+    fl(i,2,n){
+        if(v[0]+v[1]<=v[i]){cout<<"1 2 "<<i+1;nl
+        return 0;}
     }
-    nl
+    cout<<"-1";nl
+
+    
 }
 
 int main()
