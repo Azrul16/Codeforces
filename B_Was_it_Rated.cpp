@@ -37,8 +37,8 @@ int main()
 {   goBabygo
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
     cin>>n;
-    if(n/10==0)YES
-    else NO
+    if(n==15||n==20||n==21)NO
+    else YES
 
     
 }
