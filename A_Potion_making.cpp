@@ -33,20 +33,10 @@ int dp[N];
 
 
 int solve(){
-    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
+    ll n,m=100,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
     cin>>n;
-    vll(v)
-    fl(i,0,n){
-        cin>>a;
-        v.pb(a);
-    }
-    m=count(all(v),1);
-    if(m%2==0)m/=2;
-    else  m=(m/2);
-    if(m==0)cout<<n;
-    else cout<<n-m;
-    
-    nl
+    m=__gcd(m,n);
+    cout<<100/m;nl
     
 }
 

@@ -35,19 +35,16 @@ int dp[N];
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
     cin>>n;
-    vll(v)
-    fl(i,0,n){
-        cin>>a;
-        v.pb(a);
+    sum=6+10+14;
+    if(sum>=n)NO
+    else if(n==36)cout<<"YES\n6 10 15 5";
+    else if(n==40)cout<<"YES\n6 10 15 9";
+    else if(n==44)cout<<"YES\n6 7 10 21";
+    else {
+        YES nl
+        cout<<"6 10 14 "<<n-sum;
     }
-    m=count(all(v),1);
-    if(m%2==0)m/=2;
-    else  m=(m/2);
-    if(m==0)cout<<n;
-    else cout<<n-m;
-    
     nl
-    
 }
 
 int main()
