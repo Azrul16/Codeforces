@@ -34,20 +34,17 @@ int dp[N];
 
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    vll(v)
-    fl(i,0,4){
+    cin>>n;
+    vll(even) vll(odd)
+    fl(i,0,n){
         cin>>a;
-        v.pb(a);
+        if(a%2)odd.pb(a);
+        else even.pb(a);
     }
-    n=*max_element(all(v));
-    m=*min_element(all(v));
-    if(n==v[0]&&m==v[3])YES
-    else if(m==v[0]&&n==v[3])YES
-    else if(n==v[1]&&m==v[2])YES
-    else if(m==v[1]&&n==v[2])YES
-    else NO
+    //cout<<" ";
+    printvc(odd)
+    printvc(even)
     nl
-    
 }
 
 int main()

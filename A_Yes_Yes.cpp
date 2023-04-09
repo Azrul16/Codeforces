@@ -34,19 +34,20 @@ int dp[N];
 
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    vll(v)
-    fl(i,0,4){
-        cin>>a;
-        v.pb(a);
+    string s;
+    cin>>s;
+    fl(i,0,s.size()){
+        if(s[i]=='Y'&&s[i+1]=='e'){
+            YES nl return 0;
+        }
+        else if(s[i]=='e'&&s[i+1]=='s'){
+            YES nl return 0;
+        }
+        else if(s[i]=='s'&&s[i+1]=='Y'){
+            YES nl return 0;
+        }
     }
-    n=*max_element(all(v));
-    m=*min_element(all(v));
-    if(n==v[0]&&m==v[3])YES
-    else if(m==v[0]&&n==v[3])YES
-    else if(n==v[1]&&m==v[2])YES
-    else if(m==v[1]&&n==v[2])YES
-    else NO
-    nl
+    NO nl
     
 }
 
