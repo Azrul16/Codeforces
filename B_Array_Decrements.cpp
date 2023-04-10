@@ -35,11 +35,21 @@ int dp[N];
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
     cin>>n;
-    cout<<n;
-    fl(i,1,n){
-        cout<<" "<<i;
+    vll(v1) vll(v2)
+    fl(i,0,n){
+        cin>>a;
+        v1.pb(a);
     }
-    nl
+    fl(i,0,n){
+        cin>>a;
+        v2.pb(a);
+    }
+    fl(i,0,n){
+        if(v1[i]<v2[i]){
+            NO nl return 0;
+        }
+    }
+    YES nl return 0;
     
 }
 
