@@ -30,27 +30,23 @@ typedef long long ll;
 const int N=1e5+10;
 int dp[N];
 //--------------------------------------------------------------
-
+int isPerfectSquare(ll x)
+{
+    ll p=sqrt(x);
+    if(p*p==x)return 1;
+    else return 0;
+}
 
 int solve(){
-    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
+    ll n,m,i,j,k,x,y,z,a,b,c,cnt=1,tmp=0,sum=0;
     cin>>n;
-    map<ll,ll> mp;
-    while(n--){
+    fl(i,0,n){
         cin>>a;
-        mp[a]++;
+        sum+=isPerfectSquare(a);
     }
-    for(auto it:mp){
-        tmp=max(tmp,it.second);
-    }
-    while(tmp--){
-        for(auto it:mp){
-            if(it.second>0){
-                cout<<it.first<<" ";
-                mp[it.first]--;
-            }
-        }
-    }
+    //NO nl return 0;
+    if(sum==n)NO
+    else YES
     nl
     
 }

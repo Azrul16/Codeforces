@@ -34,25 +34,17 @@ int dp[N];
 
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    cin>>n;
-    map<ll,ll> mp;
-    while(n--){
-        cin>>a;
-        mp[a]++;
-    }
-    for(auto it:mp){
-        tmp=max(tmp,it.second);
-    }
-    while(tmp--){
-        for(auto it:mp){
-            if(it.second>0){
-                cout<<it.first<<" ";
-                mp[it.first]--;
-            }
+    set<char> sp;
+    string s;
+    cin>>s;
+    sort(all(s));
+    fl(i,0,s.size()-1){
+        if(s[i]+1==s[i+1])continue;
+        else {
+            cout<<"No";nl return 0;
         }
     }
-    nl
-    
+    cout<<"Yes";nl 
 }
 
 int main()
