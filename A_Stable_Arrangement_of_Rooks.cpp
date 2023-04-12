@@ -49,25 +49,29 @@ typedef long long ll;
     }
 //--------------------------------------------------------------
 
+// Global Declaration
+//--------------------------------------------------------------
+const int N = 1e5 + 10;
+int dp[N];
+//--------------------------------------------------------------
+
 int solve()
 {
     ll n, m, i, j, k, x, y, z, a, b, c, cnt = 0, tmp = 0, sum = 0;
-    string s;
-    cin >> s;
-    i = s.size() - 1;
-    while (s[i] == '0')
+    cin >> n >> m;
+    if (m > (n + 1) / 2)
     {
-        s.pop_back();
-        i--;
+        cout << "-1";
+        nl return 0;
     }
-    reverse(all(s));
-    while (s[i] == '0')
+    else
     {
-        s.pop_back();
-        i--;
+        vector<string> s(n, string(n, '.'));
+        for (i = 0; i < k; i++)
+            s[2 * i][2 * i] = 'R';
+        for (i = 0; i < n; i++)
+            cout << s[i] << "\n";
     }
-    cout << count(all(s), '0');
-    nl
 }
 
 int main()
