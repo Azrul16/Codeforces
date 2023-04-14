@@ -32,26 +32,13 @@ const int N=1e5+10;
 int dp[N];
 //--------------------------------------------------------------
 
-class gfg {
-public:
-    int sumDigits(int no)
-    {
-        if (no == 0) {
-            return 0;
-        }
- 
-        return (no % 10) + sumDigits(no / 10);
-    }
-};
 
 int main()
 {   goBabygo
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    gfg g;
     cin>>n;
-    while(g.sumDigits(n)%4!=0){
-        n++;
-    }
-    cout<<n;
+    x=n*n-n+1;
+    cout<<2*x-1;
+
     
 }
