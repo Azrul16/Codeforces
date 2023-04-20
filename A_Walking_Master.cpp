@@ -33,14 +33,15 @@ int dp[N];
 
 
 int solve(){
-    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    string s,s1;
-    cin>>n;
-    if(n<10)cout<<n;
-    else if(n>18)cout<<"-1";
-    else cout<<n-9<<9;
-nl
-    return 0;
+    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0,d;
+    cin>>a>>b>>c>>d;
+    if(d>=b&&c<=a+d-b){
+        cout<<(d-b)+(a+d-b-c);
+    }
+    else cout<<"-1";
+
+    nl
+    
 }
 
 int main()

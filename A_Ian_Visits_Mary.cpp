@@ -34,13 +34,11 @@ int dp[N];
 
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    string s,s1;
-    cin>>n;
-    if(n<10)cout<<n;
-    else if(n>18)cout<<"-1";
-    else cout<<n-9<<9;
-nl
-    return 0;
+    cin>>a>>b;
+    cout<<2;nl
+    cout<<a-1<<" 1";nl
+    cout<<a<<" "<<b;nl
+    
 }
 
 int main()

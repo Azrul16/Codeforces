@@ -34,10 +34,13 @@ int dp[N];
 
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    cin>>n>>k;
-    if(n%2 && k%2){
-        if((n-k)%2==0)YES
-    }
+    cin>>n>>m;
+    if(n%2==m%2)n-=m;
+    else n-=2*m;
+
+    if(n%2)NO
+    else YES
+    nl
     
 }
 
