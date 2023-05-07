@@ -5,7 +5,8 @@
     "string": "cpp",
     "vector": "cpp",
     "cstdlib": "cpp",
-    "cmath": "cpp"
+    "cmath": "cpp",
+    "valarray": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
