@@ -34,9 +34,11 @@ int dp[N];
 
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    string s;
+    string s,s1;
     cin>>s;
-    cout<<s<<s;
+    s1=s;
+    reverse(s.begin(), s.end());
+    cout<<s1<<s;
     nl
     
 }

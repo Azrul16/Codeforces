@@ -1,5 +1,3 @@
-
-
 //Aurthor:- Azrul Amaline
 #include<bits/stdc++.h>
 using namespace std;
@@ -14,9 +12,9 @@ typedef long long ll;
 #define YES cout<<"YES";
 #define NO cout<<"NO";
 #define vll(v) vector<ll> (v);
-#define vin(v,n) { while(n--) {long long yyy; cin>>yyy; v.push_back(yyy);}}
 #define vsort(v) sort(v.begin(), v.end());
 #define vsortg(v) sort(v.begin(), v.end(), greater<int>());
+#define vin(v,n) { while(n--) {long long yyy; cin>>yyy; v.push_back(yyy);}}
 #define all(x) x.begin(),x.end()
 #define pb push_back
 #define printvc(v) for(int i=0; i<v.size(); i++) cout<<v[i]<<" ";
@@ -27,24 +25,40 @@ typedef long long ll;
 #define goBabygo {ios::sync_with_stdio(false); cin.tie(NULL);}
 //--------------------------------------------------------------
 
-//Global Declaration
+//Global Declaration 
+//--------------------------------------------------------------
 const int N=1e5+10;
 int dp[N];
 //--------------------------------------------------------------
 
 
-int main()
-{   goBabygo
-    int n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
+int solve(){
+    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
     string s,s1,sp;
     vector<ll>v;
     vector<string>vs;
     cin>>n>>m;
-    a=m/n;
-    b=a+1;
-    if(m%n==0)cout<<a;
-    else cout<<b;
-
+    fl(i,0,n){
+        cin>>a;
+        v.pb(a);
+    }
+    vsort(v)
+    while(m--){
+        if(v[0]+v[1]<v[v.size()-1]) v.erase(v.begin(),v.begin()+2);
+        else v.pop_back();
+    }
+    fl(i,0,v.size()){
+        sum+=v[i];
+    }
+    cout<<sum;nl
 
     
+}
+
+int main()
+{   goBabygo
+    ll t;
+    cin>>t;
+    while(t--)
+    solve();
 }
