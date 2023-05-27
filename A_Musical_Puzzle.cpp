@@ -1,5 +1,3 @@
-
-
 //Aurthor:- Azrul Amaline
 #include<bits/stdc++.h>
 using namespace std;
@@ -14,9 +12,9 @@ typedef long long ll;
 #define YES cout<<"YES";
 #define NO cout<<"NO";
 #define vll(v) vector<ll> (v);
-#define vin(v,n) { while(n--) {long long yyy; cin>>yyy; v.push_back(yyy);}}
 #define vsort(v) sort(v.begin(), v.end());
 #define vsortg(v) sort(v.begin(), v.end(), greater<int>());
+#define vin(v,n) { while(n--) {long long yyy; cin>>yyy; v.push_back(yyy);}}
 #define all(x) x.begin(),x.end()
 #define pb push_back
 #define printvc(v) for(int i=0; i<v.size(); i++) cout<<v[i]<<" ";
@@ -27,34 +25,33 @@ typedef long long ll;
 #define goBabygo {ios::sync_with_stdio(false); cin.tie(NULL);}
 //--------------------------------------------------------------
 
-//Global Declaration
+//Global Declaration 
+//--------------------------------------------------------------
 const int N=1e5+10;
 int dp[N];
 //--------------------------------------------------------------
 
 
-int main()
-{   goBabygo
+int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
     string s,s1,sp;
     vector<ll>v;
     vector<string>vs;
-    map<string,ll> sm;
-    cin>>n;
-    while(n--){
-        cin>>s;
-        if(sm.count(s)==0){
-            cout<<"OK";
-            sm[s]=1;
-        }
-        else {
-            cout<<s<<sm[s];
-            sm[s]++;
-        }
-        nl
+    cin>>n>>s;
+    set<string> ss;
+    fl(i,0,s.size()-1){
+        s1=s.substr(i,2);
+        ss.insert(s1);
     }
-
-
-
+    cout<<ss.size();
+    nl
     
+}
+
+int main()
+{   goBabygo
+    ll t;
+    cin>>t;
+    while(t--)
+    solve();
 }

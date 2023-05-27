@@ -34,10 +34,14 @@ int dp[N];
 
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
+    string s,s1,sp;
+    vector<ll>v;
+    vector<string>vs;
     cin>>n>>m;
-    for(i=n,j=m;max(i,j)>0;i--,j--){
-        if(max(i,j)>0)cout<<"1";
-        if(min(i,j)>0)cout<<"0";
+    fl(i,0,min(n,m))cout<<"10";
+    fl(i,0,abs(n-m)){
+        if(n>m)cout<<'0';
+        else cout<<"1";
     }
     nl
     
