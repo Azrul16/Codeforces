@@ -1,0 +1,23 @@
+
+    1.Create a stack to hold operators.
+    2.Create an output string to hold the postfix expression.
+    3.Scan the infix expression from left to right.
+    4.If the next character is an operand, append it to the output string.
+    5.If the next character is an operator:
+       While the stack is not empty and the top of the stack is an operator with higher or equal precedence than the current operator:
+            Append the top of the stack to the output string.
+            Pop the top of the stack from the stack.
+       Push the current operator onto the stack.
+
+    6.If the next character is a closing parenthesis:
+        While the top of the stack is not an opening parenthesis:
+            Append the top of the stack to the output string.
+            Pop the top of the stack from the stack.
+        Pop the opening parenthesis from the stack, but do not append it to the output string.
+
+    7.Repeat steps 3-6 until the end of the infix expression is reached.
+    8.While the stack is not empty:
+            Append the top of the stack to the output string.
+            Pop the top of the stack from the stack.
+
+    9.Return the output string.
