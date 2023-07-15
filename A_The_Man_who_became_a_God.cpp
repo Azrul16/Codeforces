@@ -37,6 +37,7 @@ int solve(){
     string s,s1,sp;
     vector<ll>v;
     vector<string>vs;
+    cin>n;
     
 }
 
