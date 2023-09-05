@@ -32,19 +32,34 @@ int dp[N];
 //--------------------------------------------------------------
 
 
-int solve(){
-    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
+
+
     string s,s1,sp;
     vector<ll>v;
     vector<string>vs;
     
     
+    
+int solve(){
+    ll a,b,i=0, cnt=0;
+    cin>>a;
+    while(v[i]<=a)cnt++;
+    cout<<cnt<<endl;
 }
+
+
+
 
 int main()
 {   goBabygo
-    ll t;
-    cin>>t;
-    while(t--)
-    solve();
+    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
+    cin>>n;
+    fl(i,0,n){
+        cin>>a;
+        v.pb(a);
+    }
+    vsort(v)
+    cin>>m;
+    while(m--)solve();
+
 }
