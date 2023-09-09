@@ -34,14 +34,38 @@ int dp[N];
 
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
-    string s,s1,sp;
-    set<char> sett;
+    char s[3][3];
+    string p;
     vector<ll>v;
     vector<string>vs;
-    cin>>s;
-    if(count(all(s),'N')==1)NO
-    else YES
+    fl(i,0,3){
+        fl(j,0,3){
+            cin>>s[i][j];
+        }
+    }
+
+    // fl(i,0,3){
+    //     fl(j,0,3){
+    //         cout<<s[i][j];
+    //     }
+    //     nl
+    // }
+
     
+    if(s[0][0]==s[0][1]&&s[0][1]==s[0][2]&&s[0][2]!='.'){cnt++;p=s[0][0];}
+    else if(s[1][0]==s[1][1]&&s[1][1]==s[1][2]&&s[1][2]!='.'){cnt++;p=s[1][0];}
+    else if(s[2][0]==s[2][1]&&s[2][1]==s[2][2]&&s[2][2]!='.'){cnt++;p=s[2][0];}
+
+    else if(s[0][0]==s[1][0]&&s[1][0]==s[2][0]&&s[2][0]!='.'){cnt++;p=s[0][0];}
+    else if(s[0][1]==s[1][1]&&s[1][1]==s[2][1]&&s[2][1]!='.'){cnt++;p=s[0][1];}
+    else if(s[0][2]==s[1][2]&&s[1][2]==s[2][2]&&s[2][2]!='.'){cnt++;p=s[0][2];}
+
+    else if(s[0][0]==s[1][1]&&s[1][1]==s[2][2]&&s[2][2]!='.'){cnt++;p=s[0][0];}
+    else if(s[1][1]==s[0][2]&&s[0][2]==s[2][0]&&s[0][2]!='.'){cnt++;p=s[1][1];}
+    //else if(s[2][0]==s[2][1]&&s[2][1]==s[2][2]&&s[2][2]!='.')cnt++;
+
+    if(cnt>0)cout<<p;
+    else cout<<"DRAW";
 
     nl
      

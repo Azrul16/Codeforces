@@ -33,33 +33,33 @@ int dp[N];
 
 
 int solve(){
-    ll n,m,i,j,k,x=0,y=0,z,a,b,c,cnt=0,tmp=0,sum=0;
+    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
+    string s,s1,sp;
+    vector<ll>v;
+    vector<string>vs;
     cin>>n;
     fl(i,0,n){
         cin>>a;
-        if(i==n-1){
-        if(a==1)x++;
-        else y++;
-        }
-        else{
-        if(a==1)cnt++;
-        else tmp++;
-        }
+        v.pb(a);
     }
-    if(tmp==0){
-        cnt-=2;
-        tmp+=2;
+    fl(i,0,n){
+        if(v[i]==-1&&v[i+1]==-1){
+            sum+=2;
+            i++;
+            cnt++;
+        }
+        else if(v[i]==-1&&v[i+1]==1)sum--;
+        else if(v[i]==1)sum++;
+        else sum--;
     }
-    else if(tmp>(ll)1){
-        cnt+=2;
-        tmp-=2;
 
-    }
-    
-    cout<<cnt-tmp+x-y;
+    if(sum==0)cout<<sum;
+    else if(cnt>0)
+    cout<<sum;
+    else cout<<sum-4;
 
     nl
-    
+     
 }
 
 int main()

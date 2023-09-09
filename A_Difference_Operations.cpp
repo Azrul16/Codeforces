@@ -33,16 +33,27 @@ int dp[N];
 
 
 int solve(){
-    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
+    ll n,m,i,j,k,x,y,z,a,b,c,cnt=1,tmp=0,sum=0;
     string s,s1,sp;
-    set<char> sett;
     vector<ll>v;
     vector<string>vs;
-    cin>>s;
-    if(count(all(s),'N')==1)NO
+    cin>>n;
+    fl(i,0,n){
+        cin>>a;
+
+        if(i==0){
+            cnt=a;
+        }
+        else {
+            if(max(a,cnt)%min(a,cnt))tmp++;
+        }
+        
+        //cnt=a;
+    }
+    if(tmp>0)NO
     else YES
     
-
+    
     nl
      
 }

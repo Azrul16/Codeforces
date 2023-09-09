@@ -32,39 +32,23 @@ int dp[N];
 //--------------------------------------------------------------
 
 
-int solve(){
-    ll n,m,i,j,k,x,y,z,a,b,c,d,cnt=0,tmp=0,sum=0;
-    string s,s1,sp;
-    vector<ll>v;
-    vector<string>vs;
-    cin>>a>>b>>c>>d;
-   x=a+b;y-c+d;
-   if(x==y){
-    YES nl
-    return 0;
-   }
-   x=a+c;y=b+d;
-   if(x==y){
-    YES nl
-    return 0;
-   }
-   x=a+d;y=b+c;
-   if(x==y){
-    YES nl
-    return 0;
-   }
-   if(a+b+c==d||a+b+d==c||b+c+d==a){
-    YES nl
-    return 0;
-   }
-   NO nl
-    
-}
-
 int main()
 {   goBabygo
-    ll t=1;
-    //cin>>t;
-    while(t--)
-    solve();
+    ll n,m,i,j,k,x,y,z,b,c,d,cnt=0,tmp=0,sum=0;
+    string s,s1,sp;
+    vector<ll>a;
+    vector<string>vs;
+    fl(i,0,4){
+        cin>>x;
+        a.pb(x);
+    }
+    vsort(a)
+    if (a[0] + a[3] == a[1] + a[2] || a[0] + a[1] + a[2] == a[3]) {
+        cout << "YES" << endl;
+    } else {
+        cout << "NO" << endl;
+    }
+
+
+
 }
