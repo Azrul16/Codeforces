@@ -38,21 +38,16 @@ int solve(){
     string s,sp;
     vector<ll>v;
     vector<string>vs;
-    cin>>n>>s1;
-    // char p;
-    // cin>>p;
+    cin>>n>>m;
     fl(i,0,n){
-        cin>>s[i];
+        cin>>a;
+        if(a==m)cnt++;
     }
-    fl(i,0,s.size()){
-        if(s[i]==s1)
-        cnt++;
-    }
-    if(cnt>0)YES
+    if(cnt)YES
     else NO
     nl
-
-     
+    
+    return 0;
 }
 
 int main()
