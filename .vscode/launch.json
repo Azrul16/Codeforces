@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Azrul Amaline/Documents/GitHub/Codeforces",
-      "program": "c:/Users/Azrul Amaline/Documents/GitHub/Codeforces/build/Debug/outDebug",
+      "cwd": "d:/Program Code/Codeforces/Codeforces",
+      "program": "d:/Program Code/Codeforces/Codeforces/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
