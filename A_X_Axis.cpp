@@ -37,10 +37,12 @@ int solve(){
     string s,s1,sp;
     vector<ll>v;
     vector<string>vs;
-    cin>>s;
-    fl(i,0,s.size()){
-        cout<<s[i]<<" ";
+    fl(i,0,3){
+        cin>>a;
+        v.pb(a);
     }
+    vsort(v)
+    cout<<v[2]-v[0];
     nl
     
 

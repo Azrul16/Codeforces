@@ -31,19 +31,32 @@ const int N=1e5+10;
 int dp[N];
 //--------------------------------------------------------------
 
+int convertTwoDigitStringToInt(const std::string& str) {
+    if (str.length() != 2 || !isdigit(str[0]) || !isdigit(str[1])) {
+        std::cerr << "Invalid input: The input string must be exactly 2 digits." << std::endl;
+        return -1; // Returning -1 to indicate an error
+    }
+
+    // Convert the string to an integer
+    int number = std::stoi(str);
+
+    return number;
+}
+
 
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
+    int p,q;
     string s,s1,sp;
     vector<ll>v;
     vector<string>vs;
     cin>>s;
-    fl(i,0,s.size()){
-        cout<<s[i]<<" ";
-    }
-    nl
+    p=stoi(s.substr(0,2));
+    cout<<p;
     
+    nl
 
+    s="";
 
     return 0;
 }

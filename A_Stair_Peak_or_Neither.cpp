@@ -37,10 +37,10 @@ int solve(){
     string s,s1,sp;
     vector<ll>v;
     vector<string>vs;
-    cin>>s;
-    fl(i,0,s.size()){
-        cout<<s[i]<<" ";
-    }
+    cin>>a>>b>>c;
+    if(a<b && b<c)cout<<"STAIR";
+    else if(a<b && b>c)cout<<"PEAK";
+    else cout<<"NONE";
     nl
     
 

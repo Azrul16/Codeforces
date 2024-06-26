@@ -34,13 +34,20 @@ int dp[N];
 
 int solve(){
     ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
+    int p,q;
     string s,s1,sp;
     vector<ll>v;
     vector<string>vs;
-    cin>>s;
-    fl(i,0,s.size()){
-        cout<<s[i]<<" ";
+    cin>>n>>a>>b;
+    if((a*2)<b)cout<<n*a;
+    else {
+        p=n/2;
+        if(n%2==0){
+            cout<<b*p;
+        }
+        else cout<<(b*p)+a;
     }
+    
     nl
     
 

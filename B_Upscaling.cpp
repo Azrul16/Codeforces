@@ -33,15 +33,18 @@ int dp[N];
 
 
 int solve(){
-    ll n,m,i,j,k,x,y,z,a,b,c,cnt=0,tmp=0,sum=0;
+    ll n,m,i,j,k,x,y,z,a,b,c,cnt=1,tmp=0,sum=0;
     string s,s1,sp;
     vector<ll>v;
     vector<string>vs;
-    cin>>s;
-    fl(i,0,s.size()){
-        cout<<s[i]<<" ";
+    cin>>n;
+    fl(i,0,2*n){
+        fl(j,0,2*n){
+            if((i/2+j/2)%2==0)cout<<"#";
+            else cout<<".";
+        }
+        nl
     }
-    nl
     
 
 
