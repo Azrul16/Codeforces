@@ -40,23 +40,25 @@ int main()
     vector<ll>v;
     vector<string>vs;
     cin>>n>>m;
-    if(m%n==0)a=m/n;
-    else a=-1;
-    // cout<<a;nl
-    if(a==1)cout<<"0";
-    else if(n==1)cout<<"-1";
-    else if(a%3==0||a%2==0){
-
-        while(a!=1){
-            if(a%3==0)a/=3;
-            else a/=2;
-
-            cnt++;
-        }
-        cout<<cnt;
+    if(m%n){
+        cout<<"-1";
+        return 0;
     }
-    else cout<<"-1";
 
+    a = m/n;
+    while(a%2==0){
+        a/=2;
+        cnt++;
+    }
+    while(a%3==0){
+        a/=3;
+        cnt++;
+    }
 
+    if(a!=1){
+        cout<<"-1";
+        return 0;
+    }
+    else cout<<cnt;
     
 }

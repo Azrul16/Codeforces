@@ -38,12 +38,13 @@ int solve(){
     vector<ll>v;
     vector<string>vs;
     cin>>n;
+    int arr[n][2];
     fl(i,0,n){
-        cin>>a>>b;
-        if(a<10 &&b>max)max=b;
+        cin>>arr[i][0]>>arr[i][1];
+        if (arr[i][0]<=10){
+            tmp = max(tmp, arr[i][1]);
+        }
     }
-    cout<<max;
-    nl
     
 
 
